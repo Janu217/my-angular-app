@@ -9,9 +9,13 @@ import { Component } from '@angular/core';
   //Inline Template
   // template:"<div>hi</div>",
   //---------inline template multiple line
-  template:`<h1> Inline template with multiple lines</h1>
-            <h2> multiple lines </h2>`,
-  // templateUrl: './app.component.html',
+  //template:`<h1> Inline template with multiple lines</h1>
+       //     <h2> multiple lines </h2>`,
+   templateUrl: './app.component.html',
+//    styles:[`h1{
+//     background-color: aqua;
+// }`]
+     
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
