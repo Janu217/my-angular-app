@@ -1,0 +1,25 @@
+<p>products works!</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>productId</th>
+            <th>productName</th>
+            <th>productCode</th>
+            <th>releaseDate</th>
+            <th>price</th>
+            <th>starRating</th>
+            <th>imageUrl</th>
+        </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor="let prod of products">
+           <td> {{prod.productId}}</td>
+           <td>{{prod.productName}}</td>
+           <td>{{prod.productCode}}</td>
+           <td>{{prod.releaseDate}}</td>
+           <td>{{prod.price}}</td>
+           <td>{{prod.starRating}}</td>
+           <td><img [src]="prod.imageUrl" width="40px" height="40px"></td>
+       </tr>
+    </tbody>
+</table>
