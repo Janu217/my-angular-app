@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'products-thumpnail',
@@ -6,13 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styles: [
   ]
 })
-export class ProductsThumpnailComponent implements OnInit {
+export class ProductsThumpnailComponent {
 
   constructor() { }
 
-  ngOnInit(): void {
-  }
-
+  @Input() products;
 
 
 }
