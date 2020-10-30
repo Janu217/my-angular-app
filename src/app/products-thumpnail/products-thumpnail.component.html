@@ -3,6 +3,9 @@
   <img class="card-img-top" [src]="products.imageUrl" width="80px" height="80px" alt="">
   <div class="card-body">
     <h4 class="card-title">{{products.productId}}</h4>
-    <p class="card-text">{{products.productName}}</p>
+    <p class="card-text">{{products.productName | uppercase}}</p>
+    <p class="card-text">{{products.price | currency:'EUR':true:'1.1-1'}}</p>
+    <p class="card-text">{{products.releaseDate | date : 'fullDate'}}</p>
+    <p class="card-text">{{products.description?.descText | shorten}}</p>
   </div>
 </div>

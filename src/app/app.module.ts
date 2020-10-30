@@ -8,6 +8,8 @@ import { PropertyBindingComponent } from './property-binding/property-binding.co
 import { StructuraldirectivesComponent } from './structuraldirectives/structuraldirectives.component';
 import { ProductsThumpnailComponent } from './products-thumpnail/products-thumpnail.component';
 import { ProductsComponent } from './products/products.component'
+import {ShortenPipe} from './pipes/shorten.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ProductsComponent } from './products/products.component'
     PropertyBindingComponent,
     StructuraldirectivesComponent,
     ProductsThumpnailComponent,
-    ProductsComponent
+    ProductsComponent,
+    ShortenPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule
