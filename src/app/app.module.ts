@@ -10,6 +10,7 @@ import { ProductsThumpnailComponent } from './products-thumpnail/products-thumpn
 import { ProductsComponent } from './products/products.component'
 import {ShortenPipe} from './pipes/shorten.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
+import {boldfontitems} from './custom-directives/bold-items';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     ProductsThumpnailComponent,
     ProductsComponent,
     ShortenPipe,
-    FilterPipe
+    FilterPipe,
+    boldfontitems
   ],
   imports: [
     BrowserModule
